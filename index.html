@@ -6,84 +6,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="yuriy, cv, resume">
     <meta name="description" content="Это сайт - резюме Юрия Федорова">
+    <link rel="stylesheet" href="style.css">
     <title>Yuriy Resume</title>
 </head>
 <body>
-    <img src="self.jpg" alt="Юрий Федоров" width="200">
+    <div class="container">
 
-    <h1>Юрий Федоров</h1>
+        <div class="info">
+            <img src="avatar.jpeg" alt="Юрий Федоров" class="avatar">
+            <div class="info-text">
 
-    <p>Я учусь фронтенду <strong>самостоятельно</strong> и надеюсь что у меня всё <strong>получится</strong></p>
-    
-    <p>Я люблю спорт, кино, путешествия, монеты, музыку и <em>фотографировать</em></p>
+                <h1>Юрий Федоров</h1>
 
-    <h2>Мои увлечения:</h2>
+                <p>Я учусь фронтенду <strong>самостоятельно</strong> и надеюсь что у меня всё <strong>получится</strong></p>
+                
+                <p>Я люблю спорт, кино, путешествия, монеты, музыку и <em>фотографировать</em></p>
 
-    <ol>
-        <li>Путешествия</li>
-        <li>Нумизматика</li>
-        <li>Футбол</li>
-        <li>Велосипед</li>
-        <li>Фотосъемка</li>
-    </ol>
+                <h4>мои работы по фронтенду можно увидеть тут:</h4>
 
-    <h2>Опыт Работы</h2>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Компания</th>
-                <th>Должность</th>
-                <th>Год</th>
-                <th>Комментарии</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>ВГТРК</td>
-                <td>Главный специалист по работе с кредитными учреждениями</td>
-                <td>2011-2013</td>
-                <td>Взаимодействия с банками по всем финансовым вопросам</td>
-            </tr>
-            <tr>
-                <td>GE Healthcare</td>
-                <td>Специалист по работе с подрядчиками</td>
-                <td>2013-2015</td>
-                <td>Взаимодействия с компаниями-подрядчиками на проектах и логистика</td>
-            </tr>
-            <tr>
-                <td>ИП Федоров Ю А</td>
-                <td>Генеральный директор</td>
-                <td>2015-2022</td>
-                <td>Был официальным представителем компании RPM Belgium в России и странах бывшего СССР. Занимался промышленными полами, гидроизоляцией, специальными покрытиями для мостов</td>
-            </tr>            
-        </tbody>
-    </table>
-
-    <h4>мои работы можно увидеть тут:</h4>
-
-    <a href="https://codepen.io/hallsman" target="_blank">codepen</a>
-
-    <h2>Связаться со мной</h2>
-
-    <form action="/">
-        <div>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите имя">
+                <a href="https://codepen.io/hallsman" target="_blank">codepen</a>
+            </div>
         </div>
 
-        <div>
-            <label for="email">Ваш email:</label>
-            <input type="email" id="email" placeholder="Введите email">
+        <div class="card bg-green">
+
+            <h2>Мои увлечения:</h2>
+
+            <ol class="list">
+                <li>Путешествия</li>
+                <li>Нумизматика</li>
+                <li>Футбол</li>
+                <li>Велосипед</li>
+                <li>Фотосъемка</li>
+            </ol>
         </div>
 
-        <div>
-            <label for="message">Ваше сообщение:</label>
-            <br>
-            <textarea id="message" cols="20" rows="5" placeholder="Введите текст"></textarea>
+        <div class="card bg-yellow">
+            <h2>Опыт Работы</h2>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Компания</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                        <th>Обязанности</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ВГТРК</td>
+                        <td>Главный специалист по работе с кредитными учреждениями</td>
+                        <td>2011-2013</td>
+                        <td>Взаимодействия с банками по всем финансовым вопросам</td>
+                    </tr>
+                    <tr>
+                        <td>GE Healthcare</td>
+                        <td>Специалист по работе с подрядчиками</td>
+                        <td>2013-2015</td>
+                        <td>Взаимодействия с компаниями-подрядчиками на проектах и логистика</td>
+                    </tr>
+                    <tr>
+                        <td>ИП Федоров Ю А</td>
+                        <td>Генеральный директор</td>
+                        <td>2015-2022</td>
+                        <td>Официальный представитель компании RPM Belgium в России и странах бывшего СССР. Занимался промышленными полами, гидроизоляцией, специальными покрытиями для мостов</td>
+                    </tr>            
+                </tbody>
+            </table>
         </div>
 
-        <input type="submit" value="Отправить">
-    </form>
+        <form action="/" class="form bg-red">
+            <h2>Связаться со мной</h2>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" placeholder="Введите имя">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Ваш email:</label>
+                    <input type="email" id="email" placeholder="Введите email">
+                </div>
+             </div>
+
+            <div class="form-group">
+                <label for="message">Ваше сообщение:</label>
+                <textarea id="message" cols="20" rows="5" placeholder="Введите текст"></textarea>
+            </div>
+
+            <input class="btn" type="submit" value="Отправить">
+        </form>
+    </div>
 </body>
 </html>
